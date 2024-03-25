@@ -40,7 +40,7 @@ pub fn make_fingerprint() -> Result<String, JsValue> {
 
     context.begin_path();
     context.fill_style();
-    context.fill_text("🐱🐵🐶🐷, 50.0, 70.0).unwrap();
+    context.fill_text("🐱🐵🐶🐷", 50.0, 70.0).unwrap();
     context.stroke();
 
     let daturl = canvas.to_data_url().unwrap();
